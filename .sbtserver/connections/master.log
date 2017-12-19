@@ -1,0 +1,33 @@
+New log file opened at Tue Dec 19 14:26:33 IST 2017 by 4672@dlujsin7005867
+Taking next connection to: 58015
+New client attempting to connect on port: 58016-58015
+  Address = /10.207.60.231:58015
+This client on port 58016 has uuid 1e8f8b50-3ac6-45be-9fc8-92a897894638 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-1e8f8b50-3ac6-45be-9fc8-92a897894638
+Taking next connection to: 58015
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58015
+New client attempting to connect on port: 58180-58015
+  Address = /10.207.60.231:58015
+Handshake exception on socket: 58180
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58015
+New client attempting to connect on port: 58184-58015
+  Address = /10.207.60.231:58015
+This client on port 58184 has uuid 2fec334c-3eb4-4e5c-bb74-bdf9f55edf4a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2fec334c-3eb4-4e5c-bb74-bdf9f55edf4a
+Taking next connection to: 58015
+Server socket closed java.net.SocketException: Socket operation on nonsocket: configureBlocking
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 4672@dlujsin7005867 logs at Tue Dec 19 14:33:00 IST 2017, goodbye.
