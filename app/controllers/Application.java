@@ -1,5 +1,8 @@
 package controllers;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import play.*;
 import play.mvc.*;
 
@@ -11,4 +14,10 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
+    public Result testMap() {
+    	Map<String, String> params = new HashMap<String, String>();
+    	params.put("P1", "Parameter 1");
+    	params.put("P2", "2342434234");
+    	return ok(demo.render(params));
+    }
 }
